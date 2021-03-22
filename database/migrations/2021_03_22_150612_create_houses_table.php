@@ -16,8 +16,8 @@ class CreateHousesTable extends Migration
         Schema::create('houses', function (Blueprint $table) {
             $table->id();
             $table->string('street', 40)->unique();
-            $table->date('contruction_date');
-            $table->tinyInteger('mq');
+            $table->date('construction_date');
+            $table->smallInteger('mq');
             $table->tinyInteger('rooms');
             $table->integer('price');
             $table->timestamps();
